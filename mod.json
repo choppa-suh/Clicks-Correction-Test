@@ -1,0 +1,44 @@
+{
+	"geode": "5.0.0",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "yourname.click-correction",
+	"name": "Click Correction",
+	"version": "v1.0.0",
+	"developer": "YourName",
+	"description": "Adds a pause menu button to forgive early clicks, with a configurable frame window.",
+	"repository": "https://github.com/yourname/click-correction",
+	"tags": ["gameplay", "utility", "interface"],
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enable Click Correction",
+			"description": "When enabled, a click made slightly <cy>too early</c> (while still in the air) is remembered and applied the moment you land. This can also be toggled from the pause menu.",
+			"default": false
+		},
+		"max-frames": {
+			"type": "int",
+			"name": "Max Correction Frames",
+			"description": "The maximum number of physics frames (steps) a click may be early and still be corrected. At 240 TPS, <cy>4</c> frames is roughly 17 ms.",
+			"default": 4,
+			"min": 1,
+			"max": 30,
+			"control": {
+				"slider": true,
+				"arrows": true,
+				"big-arrows": true,
+				"input": true
+			}
+		},
+		"show-pause-button": {
+			"type": "bool",
+			"name": "Show Pause Menu Button",
+			"description": "Show the Click Correction button in the pause menu.",
+			"default": true
+		}
+	}
+}
