@@ -11,7 +11,7 @@
 	"version": "v1.0.0",
 	"developer": "YourName",
 	"description": "Adds a pause menu button to forgive early clicks, with a configurable frame window.",
-	"repository": "https://github.com/yourname/click-correction",
+	"repository": "https://github.com/choppa-suh/Clicks-Correction-Test/tree/main",
 	"tags": ["gameplay", "utility", "interface"],
 	"settings": {
 		"enabled": {
